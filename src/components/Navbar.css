@@ -1,0 +1,94 @@
+.nav{
+    width: 100%;
+    height: 17%;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: rgb(1, 1, 27);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid grey;
+
+}
+.nonSticky-nav{
+    width: 100%;
+    height: 17%;
+    box-sizing: border-box;
+    /* position: fixed; */
+    background-color: rgb(1, 1, 27);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid grey;
+
+}
+.nav-left{
+    width: 60%;
+    height: 13%;
+    display: flex;
+   
+}
+.nav-left1{
+    width: 40rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    margin-left: -5rem;
+    gap: 5px;
+    cursor: pointer;
+}
+
+    
+
+.nav-left1 img{
+    width: 4rem;
+    height: 3rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+.nav-left2 {
+    width: 30rem;
+    height: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.nav-left2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+.nav-left2 ul li .link{
+    text-decoration: none;
+    color: white;
+}
+.nav-left2 ul li .link:hover{
+    color: rgba(170, 100, 236, 0.836);
+    cursor: pointer;
+}
+
+.nav-right section{  
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+}
+.nav-right button{
+background-color: white;
+width: 5rem;
+height: 3rem;
+border: none;
+border-radius: 7px;
+
+font-size: 0.8rem;
+
+}
+

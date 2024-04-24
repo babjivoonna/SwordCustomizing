@@ -1,0 +1,50 @@
+.placeorder{
+    width: 100%;
+    height: auto;
+    background: url('../../public/oldwall.png');
+     display: flex;
+     color: white;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.placeorder h2{
+    margin-top: 8rem;
+    font-size: 3rem;
+}
+.placeorder-container{
+    width: 60rem; 
+    height: 20rem; 
+    margin-top: 2rem;
+    gap: 2rem;
+    display: flex;
+    margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.placeorder-container-box{
+    width: 14rem;
+    height: 19rem;
+    border-radius: 10px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(0,0,0,.05);
+    background-color: rgb(37, 50, 48); 
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.placeorder-container-box img{
+  width: 12rem;
+  height: 12rem;
+  border-radius: 5px;
+  border: none;
+  object-fit: cover;
+}
+.placeorder-container-box button{
+    width: 11rem;
+    border: none;
+    border-radius: 4px;
+    padding: 3px;
+}
+

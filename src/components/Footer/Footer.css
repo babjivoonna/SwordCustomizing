@@ -1,0 +1,67 @@
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../../public/oldwall.png');
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: white;
+}
+.footer-column1{
+    width:100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 2rem;
+}
+.footer-column1 section input{
+    color: white;
+    width: 15rem;
+    height: 2rem;
+    color: white;
+    border-radius: 5px;
+    background: rgb(1, 1, 27);
+}
+.footer-column1 aside input{
+    height: 2rem;
+    width: 15rem;
+    border-radius: 5px;
+    color: white;
+    background: rgb(1, 1, 27);
+}
+.footer-column2{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-column2 section {
+    width:32rem;
+    color: white;
+}
+.footer-column2 section input{
+    width:30rem;
+    height: 7rem;
+    border-radius: 5px;
+    color: white;
+    background: rgb(1, 1, 27)
+}
+.footer-column2 aside {  
+   width: 30rem;
+}
+.footer-column2 aside button{
+    width:28rem ;
+    height: 2rem;
+    border-radius: 8px;
+    border: none;
+}

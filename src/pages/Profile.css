@@ -1,0 +1,205 @@
+.Profile{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    
+}
+.Profile-aside{
+    width: 21%;
+    height: auto;
+  
+    background: url('../../public/wall.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-filter{
+    filter: blur(4px);
+}
+.Profile-aside>section{
+    width: 90%;
+    height: 50%;
+    /* margin-top: 5rem; */
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.Profile-aside>section p{
+    width: 95%;
+}
+.Profile-aside>aside{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.Profile-aside>aside p{
+    width: 95%;
+}
+
+.Profile-section{
+    width: 79%;
+    height: 100vh;
+    background: url('../../public/oldwall.png');
+    display: flex;
+    align-items: center;
+}
+.Profile-user-orders{
+    width: 51rem;
+    height: auto;
+    margin-left: 3rem;
+    background-color:rgb(0, 0, 17) ;
+    border: 1px solid grey;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow-y: scroll; */
+}
+.Profile-user-orderslist{
+
+    width: 51rem;
+    height: 3rem;
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+.Profile-user-orderslist1{
+
+    width: 50rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    color: white;
+    /* border-bottom: 1px solid white; */
+
+}
+.Profile-user-orderslist1>p{
+    width: 6rem;
+    max-width: 7.5rem;
+    height: 100px;
+}
+
+.Profile-user-orderslist1 .img{
+    margin-top: -32px;
+    width: 17rem;
+    height:4rem;
+   background-color: rgb(0, 0, 17);
+   border: 1px solid grey;
+}
+.Profile-user-orderslist1 .img>img{
+    padding: 2px;
+    width: 2rem;
+    height: 2rem;
+}
+.Profile-user-orderslist1 .img:hover{
+    background-color: rgba(221, 218, 218, 0.165)
+}
+.icon{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.order-select{
+    color:  rgba(170, 100, 236, 0.836);;
+}
+.popup{
+ position: absolute;
+top: 55%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+z-index: 9999;
+width: 20rem;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+border: 1px solid white;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+background-color: rgba(0, 0, 17, 0.868);
+color: white;
+gap: 10px;
+}
+
+.popup-head{
+    width: 18rem;
+    height: 3rem;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    
+}
+.close{
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    border: 1px solid white;
+    width: .9rem;
+}
+
+.popup-main{
+    width: 18rem;
+    height: auto;
+    display: flex;
+     gap: 1rem;
+    border: 1px solid white;
+}
+.popup-main>section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sel-name-img{
+    width: 10rem;
+    height: 7rem;
+    object-fit: cover;
+}
+.rep-img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.popup-footer{
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
+.tick{
+    color: green;
+}
+.tick-container{
+    width: 16px;
+    border: 1px solid green;
+    border-radius: 50%;
+}

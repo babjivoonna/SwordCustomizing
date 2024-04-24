@@ -1,0 +1,94 @@
+.home{
+    box-sizing: border-box;
+}
+.home-main{
+width: 100%;
+height:auto;
+background: url('../../public/wall.png');
+display: flex;
+flex-direction: column;
+color: white;
+font-size: 1.5rem;
+justify-content: center;
+align-items: center;
+}
+.home-main>p{
+    color: grey;
+}
+.home-main >button{
+    width: 10rem;
+    border-radius: 7px;
+    border: none;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.home-text{
+    width: 30rem;
+    font-size: 2rem;
+       color: #ff69b4; /* Fallback color */
+        color: linear-gradient(90deg, #ff69b4, #ee3efe) ;  
+        margin-bottom: 1rem;
+}
+.p{
+    margin-left: 3rem;
+    width: 25rem;
+}
+
+.home-text:nth-child(2){
+    margin-left: 5rem;
+    width: 25rem;
+}
+.home-main img{
+    margin: 10rem 8rem 4rem;
+    width: 19rem;
+    height: 19rem;
+    border-radius: 10px;
+    box-shadow:0 0 100px 0 rgba(200, 160, 255, 0.7);
+
+}
+.home-section{
+    box-sizing: border-box;
+    /* width: 100vw; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    background: url('../../public/whitewall.png');
+    border-bottom: 2px solid white;
+}
+.home-section-card{
+    width: 25rem;
+    height: 27rem;
+    display: flex;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(0,0,0,.05);
+    border-radius:  10px 10px 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.home-section-card img{
+width: 15rem;
+height: 15rem;
+border-radius:  10px 10px 0 0;
+}
+.home-section-card .box{
+    width: 14.9rem;
+    height: 5rem;
+    color: gray;
+    padding: 12px;
+    border-radius:  0px 0px 10px 10px;
+    background: rgb(1, 1, 27);
+}
+.freshanvil{
+    margin: 3rem 0;
+    font-size: 2rem;
+    color: white;
+}

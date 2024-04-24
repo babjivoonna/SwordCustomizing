@@ -1,0 +1,38 @@
+.Team{
+    width: 100%;
+    height: auto;
+    background: url('../../public/oldwall.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Team>h1{
+    margin-top: 8rem;
+    color: white;
+}
+.box-1{
+    margin-top: 4rem;
+}
+.Team-box{
+    width: 50rem;
+    height: 18rem;
+    display: flex;
+    gap: 2.5rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.Team-box img{
+    width: 15rem;
+    height: 14rem;
+    border-radius: 7px;
+    box-shadow:0 0 100px 0 rgba(200, 160, 255, 0.7)
+}
+.Team-box p{
+    width: 25rem;
+
+}
+.Team-box h2{
+    margin-bottom: 1rem;
+}

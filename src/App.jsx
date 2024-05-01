@@ -22,6 +22,7 @@ function App() {
   const { userLogInData } = useContext(storeProvider);
   const [userLoginData, setUserLoginData] = useState(userLogInData);
   const loggedIn = userLoginData?.email ? true : false;
+  const navigate=useNavigate()
   useEffect(() => {
     setUserLoginData(userLogInData);
   }, [userLogInData]); 

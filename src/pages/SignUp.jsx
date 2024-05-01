@@ -12,6 +12,7 @@ import { storeProvider } from '../Context/Context';
 
 const SignUp = () => {
   const { setUserLogInData, setUserSignUpData,}=useContext(storeProvider)
+
     const navigate=useNavigate()
     const [data, setData] = useState({
         email:"",
@@ -23,6 +24,7 @@ const SignUp = () => {
         img:"",
         google:false
       });
+      const [guestData,setGuestData]=useState({email:""})
       const [errors,setErrors]=useState({})
       const validationSchema=Yup.object({
         name:Yup.string().required("First Name is Required"),
@@ -77,7 +79,7 @@ const SignUp = () => {
          }
            
           }
-          const handleGoogleSubmit=(e)=>{
+          const handleGoogleSubmit=()=>{
             let totalData=[...retriveData,data]
             if(retriveData){
               localStorage.setItem("signUp",JSON.stringify([...retriveData,data]))
@@ -88,13 +90,34 @@ const SignUp = () => {
            
           }
          }
+         useEffect(()=>{
+          if(guestData.email){
+            navigate("/")
+          }
+         },[guestData])
+         const guestUser=()=>{
+          let guest={...guestData}
+            guest.email="GuestUserWithBabji"
+          setGuestData(guest
+        ); 
+        let totalData=[...retriveData,guest]
+            if(retriveData){
+              localStorage.setItem("signUp",JSON.stringify([...retriveData,guest]))
+              localStorage.setItem("logIn",JSON.stringify(guest))
+              setUserSignUpData(totalData)
+              setUserLogInData(guest)
+            }
+          
+         }
       
   return (
     <div className='SignUp'>
      
       <form  className="form"onSubmit={handlesubmit}>
         <h2>SingUP</h2>
+        <p>
         <GoogleLogin
+        style={{marginLeft:"rem"}}
   onSuccess={credentialResponse => {
     let token=jwtDecode(credentialResponse?.credential)
     setGoogleUerDetials(token)
@@ -102,7 +125,10 @@ const SignUp = () => {
   onError={() => {
     console.log('Login Failed');
   }}
-/>;
+/>
+</p>
+Or
+  <button onClick={guestUser}>Login As a Guest User</button>
        {/* <section onClick={()=>handleGoogleSignUp ()} className='google'> 
        
        <img src="https://clipartcraft.com/images/google-logo-transparent-2.png" alt="GoogleImage" /> 

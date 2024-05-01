@@ -3,18 +3,16 @@ import { Outlet, useNavigate } from 'react-router-dom';
 
 const ProtectedRoute = ({ userLoggedData }) => {
   const navigate = useNavigate();
-  
   useEffect(() => {
     if (!userLoggedData) {
       navigate("/signUp");
     }
-  }, [userLoggedData, navigate]);
+    else{
 
-  if (!userLoggedData) {
-    return null; // You might want to return null or a loading indicator while redirecting
-  }
-
-  return <Outlet />;
+      return <Outlet />;
+    }
+  }, []);
 };
 
 export default ProtectedRoute;
+  

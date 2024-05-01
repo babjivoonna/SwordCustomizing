@@ -1,6 +1,6 @@
 import { Suspense, useState, lazy, useEffect } from 'react';
 import './App.css';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import CustomOrder from './pages/CustomOrder';
@@ -16,6 +16,7 @@ function App() {
   const PlaceOrder = lazy(() => import('./pages/PlaceOrder'));
   const Team = lazy(() => import('./pages/Team'));
   const location = useLocation();
+  // const history=useHistory()
   const hideNavbarOnRoutes = ['/customOrder', '/signUp', '/signIn'];
   const shouldHideNavbar = hideNavbarOnRoutes.includes(location.pathname);
   const { userLogInData } = useContext(storeProvider);
@@ -23,16 +24,15 @@ function App() {
   const loggedIn = userLoginData?.email ? true : false;
   useEffect(() => {
     setUserLoginData(userLogInData);
-  }, [userLogInData]);
-
+  }, [userLogInData]); 
   return (
     <div>
       {!shouldHideNavbar && <Navbar />}
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/" Component={Home} />
         </Routes>
         <Routes>
+          <Route path="/" element={<Home/>} />
           <Route element={<ProtectedRoute userLoggedData={loggedIn} />}>
             <Route path="/placeorder" element={<PlaceOrder />} />
             <Route path="/meetTeam" element={<Team />} />

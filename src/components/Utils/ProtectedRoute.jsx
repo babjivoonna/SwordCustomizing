@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 
 const ProtectedRoute = ({ userLoggedData }) => {
   const navigate = useNavigate();
+  
   useEffect(() => {
     if (!userLoggedData) {
       navigate("/signUp");

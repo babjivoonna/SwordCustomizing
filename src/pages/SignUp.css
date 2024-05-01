@@ -1,6 +1,6 @@
 .SignUp{
     width: 100%;
-   height: auto;
+    height: 100vh;
     background: url('../../public/oldwall.png');
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
 }
 .form{
     width: 23rem;
-    height:auto;
+    height:38rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

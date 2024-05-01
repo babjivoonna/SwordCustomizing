@@ -7,11 +7,8 @@ const ProtectedRoute = ({ userLoggedData }) => {
     if (!userLoggedData) {
       navigate("/signUp");
     }
-    else{
-
-      return <Outlet />;
-    }
   }, []);
+  return <Outlet />;
 };
 
 export default ProtectedRoute;

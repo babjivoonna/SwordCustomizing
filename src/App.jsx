@@ -31,12 +31,10 @@ function App() {
       {!shouldHideNavbar && <Navbar />}
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-        </Routes>
-        <Routes>
           <Route path="/" element={<Home/>} />
+            <Route path="/meetTeam" element={<Team />} /> 
           <Route element={<ProtectedRoute userLoggedData={loggedIn} />}>
             <Route path="/placeorder" element={<PlaceOrder />} />
-            <Route path="/meetTeam" element={<Team />} />
             <Route path="/customOrder" element={<CustomOrder />} />
             <Route path="/repairrequest" element={<RepairRequestPage />} />
             <Route path="/userProfile" element={<Profile />} />
